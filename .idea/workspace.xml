@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77fbd45b-c7fa-4dbc-b872-b5fa108c9a77" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/SpringBootMicroservicesApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/helloworld/HelloWorldBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/helloworld/HelloWorldController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserDaoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="77fbd45b-c7fa-4dbc-b872-b5fa108c9a77" name="Default" comment="Added users static microserver implementation">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,10 +15,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserResource.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
+            <state relative-caret-position="108">
               <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -35,6 +26,46 @@
                 <element signature="e#817#818#0" expanded="true" />
                 <element signature="e#963#964#0" expanded="true" />
                 <element signature="e#985#986#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelloWorldBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/helloworld/HelloWorldBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+              <folding>
+                <element signature="e#164#165#0" expanded="true" />
+                <element signature="e#202#203#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDaoService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserDaoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-170">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+              <folding>
+                <element signature="e#209#210#0" expanded="true" />
+                <element signature="e#237#238#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,12 +91,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/HelloWorldController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserDaoService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/SpringBootMicroservicesApplication.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gabi/learnings/springBootMicroservices/SpringBootMicroservicesApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/helloworld/HelloWorldController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/helloworld/HelloWorldBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserDaoService.java" />
       </list>
     </option>
   </component>
@@ -116,6 +148,17 @@
             <path>
               <item name="springBootMicroservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="springBootMicroservices" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springBootMicroservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springBootMicroservices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springBootMicroservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springBootMicroservices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -241,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527874927298</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added users static microserver implementation">
+      <created>1528063218556</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1528063218557</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -257,7 +307,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.3283582" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -288,7 +338,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="missed files" />
-    <option name="LAST_COMMIT_MESSAGE" value="missed files" />
+    <MESSAGE value="Added users static microserver implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added users static microserver implementation" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -337,29 +388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserDaoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/SpringBootMicroservicesApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -381,13 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/helloworld/HelloWorldBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/helloworld/HelloWorldController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4">
@@ -400,7 +421,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
+        <state relative-caret-position="108">
           <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -408,6 +429,40 @@
             <element signature="e#817#818#0" expanded="true" />
             <element signature="e#963#964#0" expanded="true" />
             <element signature="e#985#986#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/helloworld/HelloWorldBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserDaoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
           </folding>
         </state>
       </provider>
