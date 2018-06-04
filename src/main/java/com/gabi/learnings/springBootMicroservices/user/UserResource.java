@@ -12,31 +12,32 @@ import java.util.List;
 public class UserResource {
 
     @Autowired
-    private UserDaoService service;
+    private UserDaoService userService;
+    @Autowired
+    private PostDaoService postService;
 
     //retrieveAllUsers
     @GetMapping(path = "/users")
     public List<User> retrieveAllUsers(){
-        return service.findAll();
+        return userService.findAll();
     }
 
     //retriveUser(int id)
     @GetMapping(path = "/users/{id}")
     public User retriveUser(@PathVariable int id) throws UserNotFoundException {
-        User userFound = service.findOne(id);
+        User userFound = userService.findOne(id);
         if (userFound == null){
             throw new UserNotFoundException("id-"+id);
         }
         return userFound;
     }
 
-
     //creteUser
     //input - details of the user
     //output - Create user and return the created URI
     @PostMapping(path = "/users")
     public ResponseEntity<Object> createUser(@RequestBody User user){
-        User savedUser = service.save(user);
+        User savedUser = userService.save(user);
         URI location = ServletUriComponentsBuilder
                     .fromCurrentRequest()
                     .path("/{id}")
@@ -47,4 +48,29 @@ public class UserResource {
 
     }
 
+    @GetMapping(path = "/users/{id}/posts")
+    public List<Post> retriveAllPostFromUser(@PathVariable int id){
+        return postService.findAllFromUser(id);
+    }
+
+    @PostMapping(path = "/users/{id}/posts")
+    public ResponseEntity<Object> createPost(@PathVariable int id, @RequestBody Post post){
+        post.setUser_id(id);
+        Post savedPost = postService.createPost(post);
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{post_id}")
+                .buildAndExpand(savedPost.getId())
+                .toUri();
+        return ResponseEntity.created(location).build();
+    }
+
+    @GetMapping(path = "/users/{user_id}/posts/{post_id}")
+    public Post retrievePostDetails(@PathVariable int user_id,@PathVariable int post_id){
+        Post postFound = postService.findOnePost(post_id, user_id);
+        if (postFound == null){
+            throw new PostNotFoundException("User_id-"+user_id+ " Post_id:" + post_id);
+        }
+        return postFound;
+    }
 }

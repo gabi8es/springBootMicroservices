@@ -1,5 +1,6 @@
 package com.gabi.learnings.springBootMicroservices.exception;
 
+import com.gabi.learnings.springBootMicroservices.user.PostNotFoundException;
 import com.gabi.learnings.springBootMicroservices.user.UserNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,6 +25,13 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
 
     @ExceptionHandler(UserNotFoundException.class)
     public final ResponseEntity<Object> handleUserNotFoundException(UserNotFoundException ex, WebRequest request){
+        ExceptionResponse exceptionResponse =  new ExceptionResponse(new Date(), ex.getMessage(), request.getDescription(false));
+
+        return new ResponseEntity(exceptionResponse, HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(PostNotFoundException.class)
+    public final ResponseEntity<Object> handleUserNotFoundException(PostNotFoundException ex, WebRequest request){
         ExceptionResponse exceptionResponse =  new ExceptionResponse(new Date(), ex.getMessage(), request.getDescription(false));
 
         return new ResponseEntity(exceptionResponse, HttpStatus.NOT_FOUND);
