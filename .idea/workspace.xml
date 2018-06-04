@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77fbd45b-c7fa-4dbc-b872-b5fa108c9a77" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/PostDaoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/PostNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/exception/CustomizedResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/exception/CustomizedResponseEntityExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserDaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserDaoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserResource.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,28 +20,28 @@
       <file leaf-file-name="UserResource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="68" column="47" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+            <state relative-caret-position="531">
+              <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#retriveUser#0;class#UserResource#0" />
                 <element signature="method#createUser#0;class#UserResource#0" />
                 <element signature="method#createPost#0;class#UserResource#0" />
                 <element signature="method#retrievePostDetails#0;class#UserResource#0" />
+                <element signature="method#deleteUserById#0;class#UserResource#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostNotFoundException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/PostNotFoundException.java">
+      <file leaf-file-name="UserDaoService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserDaoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="595">
+              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#258#259#0" expanded="true" />
-                <element signature="e#278#279#0" expanded="true" />
+                <element signature="method#save#0;class#UserDaoService#0" />
+                <element signature="method#findOne#0;class#UserDaoService#0" />
               </folding>
             </state>
           </provider>
@@ -74,7 +71,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/gabi/learnings/springBootMicroservices/SpringBootMicroservicesApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/helloworld/HelloWorldController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/helloworld/HelloWorldBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserDaoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/exception/ExceptionResponse.java" />
@@ -82,6 +78,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/PostDaoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/exception/CustomizedResponseEntityExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/Post.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserDaoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserResource.java" />
       </list>
     </option>
@@ -171,7 +168,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="ResponseEntityException Hand&#9;PSI&#9;JAVA://org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler&#10;helloWorldController&#9;FILE&#9;file://C:/Users/admin/IdeaProjects/springBootMicroservices/src/main/java/com/gabi/learnings/springBootMicroservices/helloworld/HelloWorldController.java" />
+    <property name="SearchEverywhereHistoryKey" value="dao&#9;FILE&#9;file://C:/Users/GLPS/workspace/springBootMicroservices/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserDaoService.java&#10;ResponseEntityException Hand&#9;PSI&#9;JAVA://org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler&#10;helloWorldController&#9;FILE&#9;file://C:/Users/admin/IdeaProjects/springBootMicroservices/src/main/java/com/gabi/learnings/springBootMicroservices/helloworld/HelloWorldController.java" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices" />
   </component>
   <component name="RecentsManager">
@@ -318,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528104908788</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Step 13 =&gt; Post Management development">
+      <created>1528110335323</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1528110335323</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -340,14 +344,14 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003903" side_tool="true" weight="0.46496814" />
       <window_info anchor="bottom" id="Maven Projects" order="11" weight="0.3280255" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49960968" visible="true" weight="0.25796178" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49960968" visible="true" weight="0.25583863" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32908705" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49928468" visible="true" weight="0.3329821" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49928674" visible="true" weight="0.3329821" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.329718" />
-      <window_info id="Structure" order="1" sideWeight="0.5007153" side_tool="true" visible="true" weight="0.3329821" />
+      <window_info id="Structure" order="1" sideWeight="0.5007133" side_tool="true" visible="true" weight="0.3329821" />
       <window_info anchor="bottom" id="Ant Build" order="12" weight="1.0" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -370,7 +374,8 @@
     <MESSAGE value="Step 11 =&gt; Create User with HTTP response created." />
     <MESSAGE value="Step 11 =&gt; Implementin error Handling 404 Not found" />
     <MESSAGE value="Step 12 =&gt; Customizing error Handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 12 =&gt; Customizing error Handling" />
+    <MESSAGE value="Step 13 =&gt; Post Management development" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 13 =&gt; Post Management development" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -388,10 +393,10 @@
           <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#retriveUser#0;class#UserResource#0" />
             <element signature="method#createUser#0;class#UserResource#0" />
             <element signature="method#createPost#0;class#UserResource#0" />
             <element signature="method#retrievePostDetails#0;class#UserResource#0" />
+            <element signature="method#deleteUserById#0;class#UserResource#0" />
           </folding>
         </state>
       </provider>
@@ -471,16 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserDaoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -580,16 +575,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserDaoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="68" column="47" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+        <state relative-caret-position="595">
+          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#retriveUser#0;class#UserResource#0" />
+            <element signature="method#save#0;class#UserDaoService#0" />
+            <element signature="method#findOne#0;class#UserDaoService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabi/learnings/springBootMicroservices/user/UserResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#createUser#0;class#UserResource#0" />
             <element signature="method#createPost#0;class#UserResource#0" />
             <element signature="method#retrievePostDetails#0;class#UserResource#0" />
+            <element signature="method#deleteUserById#0;class#UserResource#0" />
           </folding>
         </state>
       </provider>

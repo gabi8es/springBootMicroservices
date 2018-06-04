@@ -73,4 +73,13 @@ public class UserResource {
         }
         return postFound;
     }
+
+    @DeleteMapping(path="/users/{id}")
+    public void deleteUserById(@PathVariable int id){
+        User userFound = userService.deleteById(id);
+        if (userFound == null){
+            throw new UserNotFoundException("id-"+id);
+        }
+        return ;
+    }
 }
