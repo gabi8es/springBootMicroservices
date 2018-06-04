@@ -1,9 +1,14 @@
 package com.gabi.learnings.springBootMicroservices.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.Resource;
+import org.springframework.hateoas.mvc.ControllerLinkBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import org.springframework.hateoas.mvc.ControllerLinkBuilder.*;
+
+
 
 import javax.validation.Valid;
 import java.net.URI;
@@ -25,12 +30,19 @@ public class UserResource {
 
     //retriveUser(int id)
     @GetMapping(path = "/users/{id}")
-    public User retriveUser(@PathVariable int id) throws UserNotFoundException {
+    public Resource<User> retriveUser(@PathVariable int id) throws UserNotFoundException {
         User userFound = userService.findOne(id);
         if (userFound == null){
             throw new UserNotFoundException("id-"+id);
         }
-        return userFound;
+
+        Resource<User> resource = new Resource<User>(userFound);
+        ControllerLinkBuilder linkTo = ControllerLinkBuilder
+                        .linkTo(ControllerLinkBuilder.methodOn(this.getClass()).retrieveAllUsers());
+
+        resource.add(linkTo.withRel("all-users"));
+
+        return resource;
     }
 
     //creteUser
