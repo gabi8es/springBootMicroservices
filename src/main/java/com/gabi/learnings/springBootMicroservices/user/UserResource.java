@@ -1,10 +1,11 @@
 package com.gabi.learnings.springBootMicroservices.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import javax.websocket.server.PathParam;
+import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -28,9 +29,17 @@ public class UserResource {
     //creteUser
     //input - details of the user
     //output - Create user and return the created URI
-    @PostMapping(path = "/users/")
-    public User createUser(@RequestBody User user){
-        return service.save(user);
+    @PostMapping(path = "/users")
+    public ResponseEntity<Object> createUser(@RequestBody User user){
+        User savedUser = service.save(user);
+        URI location = ServletUriComponentsBuilder
+                    .fromCurrentRequest()
+                    .path("/{id}")
+                    .buildAndExpand(savedUser.getId())
+                    .toUri();
+
+        return ResponseEntity.created(location).build();
+
     }
 
 }
