@@ -37,10 +37,16 @@ public class UserResource {
         }
 
         Resource<User> resource = new Resource<User>(userFound);
-        ControllerLinkBuilder linkTo = ControllerLinkBuilder
+        ControllerLinkBuilder linkToAll = ControllerLinkBuilder
                         .linkTo(ControllerLinkBuilder.methodOn(this.getClass()).retrieveAllUsers());
 
-        resource.add(linkTo.withRel("all-users"));
+        ControllerLinkBuilder linkToPosts = ControllerLinkBuilder
+                .linkTo(ControllerLinkBuilder.methodOn(this.getClass()).retriveAllPostFromUser(id));
+
+        resource.add(linkToAll.withRel("all-users"));
+        resource.add(linkToPosts.withRel("post-list"));
+
+
 
         return resource;
     }
