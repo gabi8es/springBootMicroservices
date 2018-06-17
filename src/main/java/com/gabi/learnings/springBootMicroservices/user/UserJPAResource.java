@@ -63,7 +63,7 @@ public class UserJPAResource {
     //output - Create user and return the created URI
     @PostMapping(path = "/jpa/users")
     public ResponseEntity<Object> createUser(@Valid @RequestBody User user){
-        User savedUser = userService.save(user);
+        User savedUser = userRepository.save(user);
         URI location = ServletUriComponentsBuilder
                     .fromCurrentRequest()
                     .path("/{id}")
@@ -102,10 +102,7 @@ public class UserJPAResource {
 
     @DeleteMapping(path="/jpa/users/{id}")
     public void deleteUserById(@PathVariable int id){
-        User userFound = userService.deleteById(id);
-        if (userFound == null){
-            throw new UserNotFoundException("id-"+id);
-        }
+        userRepository.deleteById(id);
         return ;
     }
 }
